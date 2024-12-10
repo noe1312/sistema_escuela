@@ -24,7 +24,7 @@
 <body>
     <h1 class="col s12 center-align">BUSCAR ALUMNO</h1>
     <div class="row">
-    <form method="POST" action="procesa_buscar_alumno.php">
+    <form method="POST" action="../procesos/procesa_buscar_alumno.php">
         <div class="row">
             <div class="input-field col s6">
             <i class="material-icons prefix"></i>

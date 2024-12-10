@@ -43,6 +43,6 @@
  $obj_alumno->guardar();
  echo "<br>Alumno guardado en la Base de Datos";
 ?>
-<a href="listado_alumno.php" class="waves-effect waves-light btn"><i class="small material-icons">keyboard_return</i>VOLVER</a>
+<a href="../alumnos/listado_alumno.php" class="waves-effect waves-light btn"><i class="small material-icons">keyboard_return</i>VOLVER</a>
 </div>
 </body>

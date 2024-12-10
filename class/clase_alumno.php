@@ -78,7 +78,11 @@ class alumno {
     public function mostrar_alumno($id)
     {
         $mysql = new mysqli("localhost", "root", "", "bdescuela");
-        $cadena="select idalumno,apellido,nombre,sexo,provincia from alumnos where idalumno=".$id;
+        $cadena="SELECT idalumno, apellido, nombre, sexo, provincia
+FROM alumnos
+WHERE apellido LIKE '%tu_busqueda%'
+   OR nombre LIKE '%tu_busqueda%'
+ORDER BY apellido ASC";
         $registros=$mysql->query($cadena) or die($mysql->error);
         if ($reg = $registros->fetch_array()) {
             echo "Idalumno:".$reg['idalumno'];

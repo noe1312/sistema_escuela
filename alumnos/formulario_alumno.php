@@ -24,7 +24,7 @@
 <body>
     <h1 class="col s12 center-align" id="titulo" >FORMULARIO DEL ALUMNO</H1>
         <div class="row">
-        <form method="POST" action="procesa_alumno.php">
+        <form method="POST" action="../procesa_alumno.php">
             <div class="row">
                 <div class="input-field col s6">
                 <i class="material-icons prefix">edit</i>

@@ -31,17 +31,17 @@
     </style>
 </head>
 <body class="fondo">
-    <h1 class="col s12 center-align" id="titulo">REGISTRO DE NOTAS</h1>
+    <h1 class="col s12 center-align" id="titulo">REGISTRO DE ALUMNOS</h1>
     <?php
-      include("class/clase_calificacion.php");
-      $obj_calif=new calificaciones(0,0,0,0,0);
-      $obj_calif->listar();
+      include("../class/clase_alumno.php");
+      $obj_alumno=new alumno("","","",0);
+      $obj_alumno->listar();
 ?>
 <br>
 <div class="col s12 center-align">
-<a href="formulario_notas.php" class="waves-effect waves-light btn"><i class="small material-icons">person_add</i>AGREGAR NOTA</a>
-<a href="buscar_alumno.php" class="waves-effect waves-light btn"><i class="small material-icons">zoom_in</i>BUSCAR NOTA</a>
-<a href="menu_gral.html" class="waves-effect waves-light btn"><i class="small material-icons">keyboard_return</i>VOLVER</a>
+<a href="buscar_alumno.php" class="waves-effect waves-light btn"><i class="small material-icons">zoom_in</i>BUSCAR ALUMNOS</a>
+<a href="formulario_alumno.php" class="waves-effect waves-light btn"><i class="small material-icons">person_add</i>AGREGAR ALUMNOS</a>
+<a href="../menu_gral.html" class="waves-effect waves-light btn"><i class="small material-icons">keyboard_return</i>VOLVER</a>
 </div>
 </body>
 <footer>

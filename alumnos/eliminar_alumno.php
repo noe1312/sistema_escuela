@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <div class="col s12 center-align">
 <?php
-include("class/clase_alumno.php");
+include("../class/clase_alumno.php");
     $id=$_REQUEST['id'];
     $obj_alumno=new alumno("","","",0);
     $obj_alumno->eliminar($id);
